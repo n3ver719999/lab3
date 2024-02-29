@@ -31,8 +31,9 @@ while i < 3:
     b = random.randint(1,10)
     stroka = str(a) + '+' + str(b) + '='
     rez=input(stroka)
-    if rez == a+b:
+    if int(rez) == int(a)+int(b):
         print("Правильно")
     else:
         print('Неправильно')
         i+=1
+print("Игра окончена")
